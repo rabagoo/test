@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Red Snake Pong</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="game-container">
+
+    <header>
+      <div>
+        <p class="eyebrow">ARCADE GAME</p>
+        <h1>RED <span>SNAKE</span> PONG</h1>
+        <p class="subtitle">
+          Classic Pong meets a growing snake.
+        </p>
+      </div>
+
+      <button id="startBtn">START GAME</button>
+    </header>
+
+    <section class="scoreboard">
+
+      <div class="score-card">
+        <small>PLAYER</small>
+        <strong id="playerScore">0</strong>
+        <span>W / S</span>
+      </div>
+
+      <div id="status">READY</div>
+
+      <div class="score-card">
+        <small>CPU</small>
+        <strong id="cpuScore">0</strong>
+        <span>AI</span>
+      </div>
+
+    </section>
+
+    <section class="game-box">
+
+      <canvas id="gameCanvas" width="1000" height="560"></canvas>
+
+      <div class="overlay" id="overlay">
+
+        <div class="overlay-content">
+
+          <div class="icon">🐍</div>
+
+          <h2>READY?</h2>
+
+          <p>
+            Press <b>START GAME</b> to enter the arena.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <footer>
+      <span>W / S or ↑ / ↓</span>
+      <span>FIRST TO 7</span>
+      <span>ESC TO PAUSE</span>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
